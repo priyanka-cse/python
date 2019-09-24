@@ -31,6 +31,14 @@ class University:
             print("validated")
         else:
             print("Not qualified")
-obj=University()
-obj.set_data('1BM18CS414',19,75)
+n=int(input("enter how many students:"))
+for i in range(n):
+    obj=University()
+    StudId=input("enter su\tudent id")
+    Sage=int(input("enter the age"))
+    Marks=int(input("Enter the marks"))
+    obj.set_data(StudId,Sage,Marks)
+    obj.get_data()
 obj.get_data()
+        
+
